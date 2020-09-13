@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Product- RedStore </title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" width="125px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" alt="cart" width="30px" height="30px">
+                    <img src="images/menu.png" alt="cart" class="menu-icon" onclick="menutoggle()">
+
+                     <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Cart
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Product</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Quantity</span>
+                        </div>
+                        <div class="cart-items">
+                           
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Sub-Total:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Checkout</button>
+                    </div>
+                </div>
+            </div>
+                    
+                </div>
+                
+            </div>
+
+           <div class="small-container single-product" style="background-color:lightgrey ;">
+               <div class="row">
+                <div class="col-2">
+                    <img src="images/gallery-1.jpg" alt="gallery1" width="100%" id="ProductImg">
+
+                    <div class="small-img-row"> 
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                        </div>
+                    </div>
+
+
+                </div>
+            <ul>   
+                <li class="main-product">
+                    <div class="img-product" style="display: none;">
+                        <img class="img-prd"
+                            src="images/buy-1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Red Printed T-Shirt <br> by HRX</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">50$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                </li>
+
+                
+                   
+            </ul>   
+
+            
+               </div>
+           </div>
+<!---title--->
+    <div class="small-container">
+        <div class="row-2 row">
+            <h2>Related Product</h2>
+            <p>View more</p>
+        </div>
+    </div>
+
+
+<!---other product--->
+        <div class="small-container">
+
+            
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-2.jpg" alt="prd">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.jpg" alt="prd">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg" alt="prd">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-1.jpg" alt="prd">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+               
+            </div>
+            
+            
+           
+            
+        </div>
+        
+        <!-- script -->
+     <script src="js/main.js"></script> 
+       
+    <!---footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To sustainbaly Make The Pleasure and Benefits of Sports Accessible to the Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Website</p>
+        </div>
+    </div>
+    <!----js for menu-->
+    <script>
+        var MenuItems= document.getElementById("MenuItems");
+        MenuItems.style.maxHeight= "0px"
+        function menutoggle(){
+            if(MenuItems.style.maxHeight =="0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else 
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+    </script>
+<!----js for product gallery-->
+    <script>
+        var ProductImg = document.getElementById("ProductImg")
+        var SmallImg =document.getElementsByClassName("small-img")
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+
+    </body>
+</html>
