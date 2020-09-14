@@ -7,6 +7,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
             <div class="container">
@@ -222,6 +223,32 @@
             <p class="copyright">Copyright 2020 - Website</p>
         </div>
     </div>
+
+    
+    <div class="scroll-to-top scroll-to-target" style="display: block;">
+        <img src="https://nguyenvandinh.com/Uploads/images/arrow-icon.png" />    
+    </div>
+<!---- js for back to top--->
+<script>
+    var offset = 200;
+var duration = 500;
+$(window).scroll(function () {
+   if ($(this).scrollTop() > offset) {
+       $('.scroll-to-top').fadeIn(400);
+   } else {
+       $('.scroll-to-top').fadeOut(400);
+   }
+});
+$('.scroll-to-top').click(function (event) {
+   event.preventDefault();
+   $('html, body').animate({
+       scrollTop: 0
+   }, 600);
+   return false;
+});
+</script>
+
+
     <!----js for menu-->
     <script>
         var MenuItems= document.getElementById("MenuItems");
